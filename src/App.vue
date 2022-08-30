@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <Loader />
     <navbar ref="navbar" />
     <posts-list :list="posts" />
@@ -47,3 +47,12 @@
     },
   };
 </script>
+
+<style scoped>
+  .app {
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto">
+  <div class="ml-auto mr-auto mt-auto">
     <BPagination
       v-model="currentPageModel"
       :per-page="perPage"

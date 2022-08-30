@@ -6,9 +6,6 @@ import loaderStore from './modules/loader';
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
   modules: { posts, loaderStore },
 });
 
