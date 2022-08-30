@@ -29,12 +29,12 @@
         'fetchPosts',
         'toggleSearchState',
       ]),
-      onSearchValue(val) {
+      async onSearchValue(val) {
         if (val) {
-          this.searchPosts(val);
+          await this.searchPosts(val);
           this.toggleSearchState(true);
         } else {
-          this.fetchPosts();
+          await this.fetchPosts();
           this.toggleSearchState(false);
         }
       },
